@@ -28,6 +28,7 @@
     </q-card-section>
     <q-card-actions>
       <q-btn class="bold" flat color="primary" @click="router.push(`/shop/${product.id.toString()}`)">Info</q-btn>
+      <q-btn class="bold" flat color="primary" @click="router.push(`/shop/details/${product.id.toString()}`)">Details</q-btn>
     </q-card-actions>
   </q-card>
 </template>
@@ -44,7 +45,7 @@ const router = useRouter();
 
 </script>
 
-<style>
+<style scoped>
 .color {
   background-color: v-bind("props.product.color") !important;
 }
