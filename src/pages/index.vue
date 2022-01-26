@@ -1,6 +1,6 @@
 <template>
-  <q-page class="row items-center justify-evenly">
-    <q-card class="max-w-2xl w-full m-4">
+  <q-page class="row items-center justify-evenly p-4">
+    <q-card class="max-w-2xl w-full">
       <q-card-section>
         <div class="text-h6">Mehrwertseuer</div>
       </q-card-section>
