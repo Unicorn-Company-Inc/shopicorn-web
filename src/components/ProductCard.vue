@@ -27,17 +27,20 @@
       <q-rating readonly v-model="product.stars" size="2em" :max="5" color="yellow" />
     </q-card-section>
     <q-card-actions>
-      <q-btn class="bold" flat color="primary">Details</q-btn>
+      <q-btn class="bold" flat color="primary" @click="router.push(`/shop/${product.id.toString()}`)">Info</q-btn>
     </q-card-actions>
   </q-card>
 </template>
 
 <script setup lang="ts">
 import { ProductEntity } from 'src/api/dto/product-entity';
+import { useRouter } from 'vue-router';
 
 const props = defineProps<{
   product: ProductEntity;
 }>();
+
+const router = useRouter();
 
 </script>
 

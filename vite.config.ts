@@ -13,7 +13,7 @@ export default defineConfig({
     vue({ template: { transformAssetUrls } }),
     quasar({ sassVariables: 'src/assets/style/quasar-variables.sass' }),
     Pages({
-      nuxtStyle: true,
+      nuxtStyle: false,
       dirs: [
         { dir: 'src/pages', baseRoute: '' },
         { dir: 'src/pages/blank', baseRoute: '' },
