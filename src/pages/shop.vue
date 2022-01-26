@@ -1,6 +1,6 @@
 <template>
   <div>
-    Mwst
+    Shop
   </div>
 </template>
 

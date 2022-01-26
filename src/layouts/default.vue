@@ -6,6 +6,10 @@
           Shopicorn
         </q-toolbar-title>
       </q-toolbar>
+      <q-tabs>
+        <q-route-tab slot="title" name="tab-1" icon="calculate" label="Mehrwertseuer" to="/" exact />
+        <q-route-tab slot="title" name="tab-2" icon="shopping_cart" label="Accessory Shop" to="/shop" exact />
+      </q-tabs>
     </q-header>
 
     <q-page-container>
